@@ -27,7 +27,7 @@ All you need to do is include Stampable module in the ActiveRecord model that yo
 
 ```ruby
 class Blog < ActiveRecord::Base
-  include Stampable
+  include Stampable::Base
 end
 ```
 
