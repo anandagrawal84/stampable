@@ -1,8 +1,8 @@
 Stampable gem [![Build Status](https://secure.travis-ci.org/anandagrawal84/stampable.png?branch=master)](http://travis-ci.org/anandagrawal84/stampable)
-=============
+=====================
 
 Overview
---------
+---------
 
 The Stampable gem is used to stamp ActiveRecord model with current user. This is a simple gem that stores who modified/created the record in a single field.
 
