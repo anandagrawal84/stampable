@@ -1,4 +1,4 @@
-Stampable gem
+Stampable gem [![Build Status](https://secure.travis-ci.org/anandagrawal84/stampable.png?branch=master)](http://travis-ci.org/anandagrawal84/stampable)
 =============
 
 Overview
