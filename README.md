@@ -58,3 +58,9 @@ To specify a default user add following
 ```ruby
 Stampable::Base.config = {:default_user => 'robot'}
 ```
+
+To skip the modification of stampable fields by some particular users, ex default is background_job
+
+```ruby
+Stampable::Base.config = {:except_user_list => ['background_job','user1']}
+```

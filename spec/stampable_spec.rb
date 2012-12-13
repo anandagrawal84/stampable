@@ -73,4 +73,17 @@ describe Stampable do
     model.touched_by.should == 'user'
     model.modified_by.should == nil
   end
+
+  it 'should not update the user if it belongs to except user list' do
+    Stampable::Base.config.merge({:except_user_list=>["job"]})
+
+    model = ActiveRecordModel.new
+    model.modified_by = 'some user'
+    Thread.current['current_user'] = 'job'
+
+    model.invoke_before_save
+
+    model.modified_by.should == 'some user'
+  end
+
 end
